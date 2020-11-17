@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>download.png</file>
+        <file>save.png</file>
+        <file>../../images/run.ico</file>
+        <file>../../images/zoom-in.png</file>
+        <file>../../images/zoom-out.png</file>
+    </qresource>
+</RCC>

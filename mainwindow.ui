@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1126</width>
+    <height>778</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QSplitter" name="splitter_2">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <widget class="QSplitter" name="splitter">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>6</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <widget class="QWidget" name="layoutWidget">
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <widget class="QLabel" name="label_2">
+           <property name="text">
+            <string>Image list</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QListWidget" name="listWidget">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>1</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QTabWidget" name="tabWidget">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+          <horstretch>5</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <property name="tabsClosable">
+         <bool>true</bool>
+        </property>
+        <property name="movable">
+         <bool>true</bool>
+        </property>
+        <widget class="QWidget" name="tab_4">
+         <attribute name="title">
+          <string>Tab 1</string>
+         </attribute>
+        </widget>
+        <widget class="QWidget" name="tab_3">
+         <attribute name="title">
+          <string>Tab 2</string>
+         </attribute>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <widget class="QLabel" name="label_3">
+           <property name="text">
+            <string>Processing method</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QTableWidget" name="tableWidget">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>2</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="rowCount">
+            <number>2</number>
+           </property>
+           <property name="columnCount">
+            <number>2</number>
+           </property>
+           <row/>
+           <row/>
+           <column>
+            <property name="text">
+             <string>parameters</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>values</string>
+            </property>
+           </column>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="layoutWidget">
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>Analyze</string>
+          </property>
+          <property name="textFormat">
+           <enum>Qt::AutoText</enum>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTableWidget" name="tableWidget">
+          <column>
+           <property name="text">
+            <string>Image</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Je</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>dmax</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>dmin</string>
+           </property>
+          </column>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1126</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menufile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionopen"/>
+    <addaction name="actionsave"/>
+    <addaction name="separator"/>
+    <addaction name="actionSettings"/>
+    <addaction name="actionForm_image"/>
+    <addaction name="actionOpen_hyperspectral_image"/>
+   </widget>
+   <widget class="QMenu" name="menuedit">
+    <property name="title">
+     <string>Edit</string>
+    </property>
+    <addaction name="actionGray_scale"/>
+    <addaction name="actionZoom_in"/>
+    <addaction name="actionZoom_out"/>
+   </widget>
+   <widget class="QMenu" name="menuanalyze">
+    <property name="title">
+     <string>Analyze</string>
+    </property>
+    <addaction name="actionAverage"/>
+    <addaction name="actionClear"/>
+    <addaction name="actionShow_bands"/>
+    <addaction name="actionReduce_Shadow"/>
+    <addaction name="actionReduce_class"/>
+   </widget>
+   <widget class="QMenu" name="menuRun">
+    <property name="title">
+     <string>Run</string>
+    </property>
+    <addaction name="actionRun"/>
+   </widget>
+   <widget class="QMenu" name="menuProcess">
+    <property name="title">
+     <string>Process</string>
+    </property>
+    <addaction name="actionedge_dectect"/>
+    <addaction name="actionMirror"/>
+    <addaction name="actionBA"/>
+    <addaction name="actionK_means"/>
+    <addaction name="actionPBA"/>
+    <addaction name="actionCV_K_means"/>
+    <addaction name="actionPBA_K_means"/>
+    <addaction name="actionPSO_K_means"/>
+    <addaction name="separator"/>
+    <addaction name="actionGT_PBA_K_means"/>
+    <addaction name="actionCV_enhancement"/>
+    <addaction name="actionCV_enhance_histo"/>
+    <addaction name="actionCV_enhance_log"/>
+    <addaction name="actionGT_PBA"/>
+    <addaction name="actionGT_BA"/>
+    <addaction name="actionGT_CV_K_means"/>
+    <addaction name="actionGT_K_means"/>
+    <addaction name="separator"/>
+    <addaction name="actionSU_PBA_K_means"/>
+    <addaction name="actionMyEnhancement"/>
+    <addaction name="actionT_means"/>
+    <addaction name="actionACO_K_means"/>
+    <addaction name="actionGA_K_means"/>
+    <addaction name="actionSA_K_means"/>
+   </widget>
+   <addaction name="menufile"/>
+   <addaction name="menuedit"/>
+   <addaction name="menuProcess"/>
+   <addaction name="menuanalyze"/>
+   <addaction name="menuRun"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionopen"/>
+   <addaction name="actionsave"/>
+   <addaction name="actionRun"/>
+   <addaction name="separator"/>
+   <addaction name="actionZoom_in"/>
+   <addaction name="actionZoom_out"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionopen">
+   <property name="icon">
+    <iconset resource="myresource.qrc">
+     <normaloff>:/images/download.png</normaloff>:/images/download.png</iconset>
+   </property>
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </action>
+  <action name="actionsave">
+   <property name="icon">
+    <iconset resource="myresource.qrc">
+     <normaloff>:/images/save.png</normaloff>:/images/save.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </action>
+  <action name="actionGray_scale">
+   <property name="text">
+    <string>Gray scale</string>
+   </property>
+  </action>
+  <action name="actionRun">
+   <property name="icon">
+    <iconset resource="myresource.qrc">
+     <normaloff>:/images/images/run.ico</normaloff>:/images/images/run.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Run</string>
+   </property>
+  </action>
+  <action name="actionZoom_in">
+   <property name="icon">
+    <iconset resource="myresource.qrc">
+     <normaloff>:/images/images/zoom-in.png</normaloff>:/images/images/zoom-in.png</iconset>
+   </property>
+   <property name="text">
+    <string>Zoom in</string>
+   </property>
+  </action>
+  <action name="actionZoom_out">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/zoom-out.png</normaloff>../../images/zoom-out.png</iconset>
+   </property>
+   <property name="text">
+    <string>Zoom out</string>
+   </property>
+  </action>
+  <action name="actionSettings">
+   <property name="text">
+    <string>Settings</string>
+   </property>
+  </action>
+  <action name="actionedge_dectect">
+   <property name="text">
+    <string>Edge dectect</string>
+   </property>
+  </action>
+  <action name="actionMirror">
+   <property name="text">
+    <string>Mirror</string>
+   </property>
+  </action>
+  <action name="actionBA">
+   <property name="text">
+    <string>BA</string>
+   </property>
+  </action>
+  <action name="actionK_means">
+   <property name="text">
+    <string>K-means</string>
+   </property>
+  </action>
+  <action name="actionPBA">
+   <property name="text">
+    <string>PBA</string>
+   </property>
+  </action>
+  <action name="actionCV_K_means">
+   <property name="text">
+    <string>CV_K-means</string>
+   </property>
+  </action>
+  <action name="actionPBA_K_means">
+   <property name="text">
+    <string>PBA-K-means</string>
+   </property>
+  </action>
+  <action name="actionAverage">
+   <property name="text">
+    <string>Average</string>
+   </property>
+  </action>
+  <action name="actionClear">
+   <property name="text">
+    <string>Clear</string>
+   </property>
+  </action>
+  <action name="actionPSO_K_means">
+   <property name="text">
+    <string>PSO-K-means</string>
+   </property>
+  </action>
+  <action name="actionAccuracy">
+   <property name="text">
+    <string>Accuracy</string>
+   </property>
+  </action>
+  <action name="actionGT_PBA_K_means">
+   <property name="text">
+    <string>GT_PBA-K-means</string>
+   </property>
+  </action>
+  <action name="actionCV_enhancement">
+   <property name="text">
+    <string>CV_enhancement</string>
+   </property>
+  </action>
+  <action name="actionCV_enhance_histo">
+   <property name="text">
+    <string>CV_enhance_histo</string>
+   </property>
+  </action>
+  <action name="actionCV_enhance_log">
+   <property name="text">
+    <string>CV_enhance_log</string>
+   </property>
+  </action>
+  <action name="actionGT_PBA">
+   <property name="text">
+    <string>GT_PBA</string>
+   </property>
+  </action>
+  <action name="actionGT_BA">
+   <property name="text">
+    <string>GT_BA</string>
+   </property>
+  </action>
+  <action name="actionGT_CV_K_means">
+   <property name="text">
+    <string>GT_CV_K-means</string>
+   </property>
+  </action>
+  <action name="actionGT_K_means">
+   <property name="text">
+    <string>GT_K-means</string>
+   </property>
+  </action>
+  <action name="actionSU_PBA_K_means">
+   <property name="text">
+    <string>SU_PBA-K-means</string>
+   </property>
+  </action>
+  <action name="actionMyEnhancement">
+   <property name="text">
+    <string>MyEnhancement</string>
+   </property>
+  </action>
+  <action name="actionShow_bands">
+   <property name="text">
+    <string>Show bands</string>
+   </property>
+  </action>
+  <action name="actionReduce_Shadow">
+   <property name="text">
+    <string>Reduce Shadow</string>
+   </property>
+  </action>
+  <action name="actionForm_image">
+   <property name="text">
+    <string>Form image</string>
+   </property>
+  </action>
+  <action name="actionT_means">
+   <property name="text">
+    <string>T-means</string>
+   </property>
+  </action>
+  <action name="actionReduce_class">
+   <property name="text">
+    <string>Reduce class</string>
+   </property>
+  </action>
+  <action name="actionOpen_hyperspectral_image">
+   <property name="text">
+    <string>Open hyperspectral image</string>
+   </property>
+  </action>
+  <action name="actionACO_K_means">
+   <property name="text">
+    <string>ACO-K-means</string>
+   </property>
+  </action>
+  <action name="actionGA_K_means">
+   <property name="text">
+    <string>GA-K-means</string>
+   </property>
+  </action>
+  <action name="actionSA_K_means">
+   <property name="text">
+    <string>SA-K-means</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="myresource.qrc"/>
+ </resources>
+ <connections/>
+</ui>
