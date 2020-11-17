@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icons/download.png</file>
+        <file>icons/run.ico</file>
+        <file>icons/save.png</file>
+        <file>icons/zoom-in.png</file>
+        <file>icons/zoom-out.png</file>
+    </qresource>
+</RCC>

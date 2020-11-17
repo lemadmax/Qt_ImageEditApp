@@ -69,7 +69,7 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 RESOURCES += \
-    myresource.qrc
+    Resources.qrc
 
 
 #win32:CONFIG(release, debug|release): LIBS += -L$$PWD/../../../gdal/lib/ -lgdal_i

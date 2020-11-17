@@ -259,8 +259,8 @@
   <widget class="QStatusBar" name="statusBar"/>
   <action name="actionopen">
    <property name="icon">
-    <iconset resource="myresource.qrc">
-     <normaloff>:/images/download.png</normaloff>:/images/download.png</iconset>
+    <iconset resource="Resources.qrc">
+     <normaloff>:/icons/download.png</normaloff>:/icons/download.png</iconset>
    </property>
    <property name="text">
     <string>Open</string>
@@ -268,8 +268,8 @@
   </action>
   <action name="actionsave">
    <property name="icon">
-    <iconset resource="myresource.qrc">
-     <normaloff>:/images/save.png</normaloff>:/images/save.png</iconset>
+    <iconset resource="Resources.qrc">
+     <normaloff>:/icons/save.png</normaloff>:/icons/save.png</iconset>
    </property>
    <property name="text">
     <string>Save</string>
@@ -282,8 +282,8 @@
   </action>
   <action name="actionRun">
    <property name="icon">
-    <iconset resource="myresource.qrc">
-     <normaloff>:/images/images/run.ico</normaloff>:/images/images/run.ico</iconset>
+    <iconset resource="Resources.qrc">
+     <normaloff>:/icons/run.ico</normaloff>:/icons/run.ico</iconset>
    </property>
    <property name="text">
     <string>Run</string>
@@ -291,8 +291,8 @@
   </action>
   <action name="actionZoom_in">
    <property name="icon">
-    <iconset resource="myresource.qrc">
-     <normaloff>:/images/images/zoom-in.png</normaloff>:/images/images/zoom-in.png</iconset>
+    <iconset resource="Resources.qrc">
+     <normaloff>:/icons/zoom-in.png</normaloff>:/icons/zoom-in.png</iconset>
    </property>
    <property name="text">
     <string>Zoom in</string>
@@ -300,8 +300,8 @@
   </action>
   <action name="actionZoom_out">
    <property name="icon">
-    <iconset>
-     <normaloff>../../images/zoom-out.png</normaloff>../../images/zoom-out.png</iconset>
+    <iconset resource="Resources.qrc">
+     <normaloff>:/icons/zoom-out.png</normaloff>:/icons/zoom-out.png</iconset>
    </property>
    <property name="text">
     <string>Zoom out</string>
@@ -465,7 +465,7 @@
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources>
-  <include location="myresource.qrc"/>
+  <include location="Resources.qrc"/>
  </resources>
  <connections/>
 </ui>

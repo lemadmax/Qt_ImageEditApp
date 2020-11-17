@@ -6,4 +6,5 @@
         <file>../../images/zoom-in.png</file>
         <file>../../images/zoom-out.png</file>
     </qresource>
+    <qresource prefix="/"/>
 </RCC>
