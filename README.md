@@ -12,3 +12,5 @@ Currently implemented algorithms for image clustering:
 5). Pollen-Based Bee Algorithm
 6). Ant Colony Optimization
 7). Simulated Annealing
+
+![image](https://github.com/lemadmax/Qt_ImageEditApp/blob/main/demo/demoImage.png)
