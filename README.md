@@ -1,5 +1,6 @@
 # Qt_ImageEditApp
 This is an image editing application for research purposes. It is mainly used for implementing algorithms, conducting experiments, etc.
+Author: Zhengrui Xia
 To see how the application works, download the project and run the imagepimp1.exe under the demo directory.
 
 Development environment: Qt_4.12 + Matlab2019b + opencv_4.3.
